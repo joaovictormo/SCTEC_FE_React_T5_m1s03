@@ -4,6 +4,9 @@ function precoFinal(preco, desconto) {
   return Number(preco) - Number((preco * desconto) / 100);
 }
 
+// mesma função em formato de arrow function:
+//const precoFinal = (preco, desconto) => preco - (preco * desconto) / 100;
+
 let precoOriginal = Number(prompt("Qual é o valor do produto (ex.: 100)? R$"));
 while (Number.isNaN(precoOriginal)) {
   precoOriginal = Number(
